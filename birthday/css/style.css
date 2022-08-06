@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
+.ff{
+	font-family: 'Gentium Book Plus';
+}
+
+/*Start Header*/
+header{
+	height: 100vh;
+
+	background-image: url("../birthdayassets/img/banner2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	position: relative;
+}
+.navs{
+	background-color: darkblue;
+	padding: 20px 5px;
+
+	transition: padding 0.3s;
+}
+.nav-padding{
+	padding: 10px 5px;
+}
+.title-navs{
+	letter-spacing: 2px;
+	font-family: 'Gentium Book Plus';
+
+	margin-left: 20px;
+}
+.loginbtn-parents{
+	width: 200px;
+
+	display: flex;
+	justify-content: end;
+
+	margin-right: 20px;
+}
+.loginbtns{
+	width: 100px;
+	color: steelblue;
+
+	border-radius: 30px;
+	border: 1px solid skyblue;
+
+	transition: all 0.5s linear;
+}
+.loginbtns:hover{
+	background-color: steelblue;
+	color: #fff;
+	border-color: #fff;
+}
+.banners{
+	width: 80%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%,-50%);
+}
+.bannerheaders{
+	animation-name: header;
+	animation-duration: 2s;
+}
+.bannerparagraphs{
+	animation-name: header;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+@keyframes header{
+	0%{
+		transform: translate(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px);
+		opacity: 1;
+	}
+}
+
+/*End Header*/
+
+
+/*Start About*/
+.about{
+	background-color: skyblue;
+}
+.aboutimg{
+	width: 230px;
+	height: 400px;
+}
+.aboutimg .profile{
+	width: 100%;
+	height: 90%;
+
+	border-radius: 10px;
+	transition: transform 0.3s;
+}
+.aboutimgtxts{
+	width: 100%;
+
+	text-align: center;
+	font-family: 'Gentium Book Plus';
+	color: #fff;
+}
+
+.abouttext-titles{
+	font-size: 30px;
+	font-family: 'Gentium Book Plus';
+}
+.abouttext-subtitles{
+	background-color: #fff;
+	color: #000;
+	padding: 20px 50px;
+	border-left: 3px solid red;
+}
+.abouttexts p{
+	margin: 0;
+}
+
+.fromlefts{
+	animation-name: fromleftani;
+	animation-duration: 2s;
+}
+
+@keyframes fromleftani{
+	0%{
+		transform: translate(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px);
+		opacity: 1;
+	}
+}
+
+.fromrights{
+	animation-name: fromrightani;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes fromrightani{
+	0%{
+		transform: translate(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px);
+		opacity: 1;
+	}
+}
+
+/*End About*/
+
+/*Start Image*/
+.images{
+	background-color: steelblue;
+}
+.titles{
+	text-transform: uppercase;
+	font-family: 'Gentium Book Plus';
+	display: inline-block;
+
+	padding: 5px 30px;
+
+	position: relative;
+}
+.titles::before,.titles::after{
+	content: '';
+
+	width: 20px;
+	height: 20px;
+
+	position: absolute;
+}
+.titles:before{
+	border-bottom: 3px solid skyblue;
+	border-left: 3px solid skyblue;
+
+	left: 0;
+	bottom: 0;
+}
+
+.titles:after{
+	border-top: 3px solid skyblue;
+	border-right: 3px solid skyblue;
+
+	right: 0;
+	top: 0;
+}
+.imgs{
+	width: 100%;
+	height: 400px;
+
+	border-radius: 30px;
+	position: relative;
+
+	overflow: hidden;
+}
+.imgs img{
+	width: 100%;
+	height: 100%;
+
+	transition: all 0.5s;
+}
+
+.imgs::before{
+	content: ' \f004  \f004  \f004';
+	font-family: 'Font Awesome 5 Free';
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: all 0.5s;
+}
+.imgs:hover::before{
+	opacity: 0;
+}
+.imgs:hover img{
+	transform: scale(1.5) rotate(10deg);
+	transition-delay: 0.3s;
+}
+/*End Image*/
+
+/*start wish*/
+.wishs{
+	background-image: url("../birthdayassets/img/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.wish-txts{
+	display: inline-block;
+	background-color: #fff;
+	border-left: 3px solid red;
+	padding: 5px 30px;
+}
+/*end wish*/
+
+/*start footer*/
+.footer{
+	position: relative;
+}
+.toparr{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 30px;
+	top: -30%;
+
+	text-align: center;
+}
+.arrups{
+	text-decoration: none;
+	font-size: 30px;
+	color: #fff;
+	background-color: steelblue;
+	scroll-behavior: smooth;
+
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+.arrups:hover{
+	color: #fff;
+}
+/*end footer*/
+
+@media(max-width: 990px){
+
+	/*Start Header*/
+	.loginbtn-parents{
+		width: 100%;
+	}
+	/*End Header*/
+}
